@@ -5,6 +5,9 @@ export const metadata = {
 }
 
 const Services = () => {
+
+    throw new Error('oooops!!')
+    
     
     return (
         <section id="service" className="service">

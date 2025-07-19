@@ -1064,3 +1064,18 @@ nav.navbar.bootsnav .navbar-toggle i {
     justify-content: center;
     align-items: center;
 }
+
+.error_page {
+    width: 30vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mt-2 {
+    margin-top: 20px;
+}
+.border {
+    border: 2px black;
+}
