@@ -22,12 +22,13 @@ const Navbar = () => {
                         </div>
                         <div className="collapse navbar-collapse menu-ui-design" id="navbar-menu">
                             <ul className="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-                                <li className={`${pathname == '/' ? 'active' : ''}`}><Link href="/">home</Link></li>
-                                <li className={`${pathname == '/services' ? 'active' : ''}`}><Link href="/services">services</Link></li>
-                                <li className={`${pathname == '/featuredCars' ? 'active' : ''}`}><Link href="/featuredCars">featured cars</Link></li>
-                                <li className={`${pathname == '/newCars' ? 'active' : ''}`}><Link href="#newCars">new cars</Link></li>
-                                <li className={`${pathname == '/brands' ? 'active' : ''}`}><Link href="#brands">brands</Link></li>
-                                <li className={`${pathname == '/contact' ? 'active' : ''}`}><Link href="#contact">contact</Link></li>
+                                <li><Link style={{color: pathname == '/' && ('blue')}} href="/">home</Link></li>
+                                <li><Link href="/services" style={{color: pathname == ('/services') && 'blue'}}>services</Link></li>
+                                <li><Link href="/featuredCars" style={{color: pathname.startsWith('/featuredCars') && 'blue'}}>featured cars</Link></li>
+                                <li><Link href="/login" style={{color: pathname == ('/login') && 'blue'}}>login</Link></li>
+                                {/* <li className={`${pathname == '/newCars' ? 'active' : ''}`}><Link href="#newCars">new cars</Link></li> */}
+                                {/* <li className={`${pathname == '/brands' ? 'active' : ''}`}><Link href="#brands">brands</Link></li> */}
+                                {/* <li className={`${pathname == '/contact' ? 'active' : ''}`}><Link href="#contact">contact</Link></li> */}
                             </ul>
                         </div>
                     </div>
