@@ -8,7 +8,9 @@ export default function NotFound() {
       <p>Could not find requested resource</p>
       <hr />
       <button className='btn btn-info'>
-        <Link href="/">Return Home</Link>
+        <Link href="/">
+        <span>Return Home</span>
+        </Link>
       </button>
     </div>
   )
